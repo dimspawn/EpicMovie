@@ -1,0 +1,32 @@
+name: iOS starter workflow
+
+on:
+  push:
+    branches:
+     - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build:
+    name: Build and Test iPhone
+    runs-on: macOS-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+     - uses: actions/checkout@v2
+     - name: List available Xcode versions
+       run: ls /Applications | grep Xcode
+
+     # Runs a single command using the runners shell
+     - name: Run check Version
+       run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
+     - name: Install Dependencies
+       run: |
+         pod install --repo-update
+     # Runs a set of commands using the runners shell
+     - name: Run test script
+       run: |
+          xcrun xctrace list devices
+          xcodebuild test -workspace NewEpicMovie.xcworkspace -scheme EpicMovie -destination "platform=iOS Simulator,name=iPhone 11,OS=14.4"
