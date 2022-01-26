@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (5.5.0)
+  - Core (1.0.0)
+  - Realm (10.21.1):
+    - Realm/Headers (= 10.21.1)
+  - Realm/Headers (10.21.1)
+  - RealmSwift (10.21.1):
+    - Realm (= 10.21.1)
+  - SDWebImage (5.12.2):
+    - SDWebImage/Core (= 5.12.2)
+  - SDWebImage/Core (5.12.2)
+  - SDWebImageSwiftUI (2.0.2):
+    - SDWebImage (~> 5.10)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - Core
+  - RealmSwift (~> 10.20)
+  - SDWebImageSwiftUI (~> 2.0)
+
+SPEC REPOS:
+  https://github.com/dimspawn/Epic-Movie-CorePodSpecs:
+    - Core
+  trunk:
+    - Alamofire
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SDWebImageSwiftUI
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Core: f7570f71329f2be79c73f00c366384b2f1ceffdf
+  Realm: 44b41c3ae39e3ecfded71a04434bfde066c7b317
+  RealmSwift: dbf9a4eb06e0c929d51c4ef2e8f951bca541feab
+  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  SDWebImageSwiftUI: 8a3923c95108312b03a599ec1498754af55a6819
+
+PODFILE CHECKSUM: c28946291f6efdfcc92b7c364d497e38f8fb7ed5
+
+COCOAPODS: 1.11.2
