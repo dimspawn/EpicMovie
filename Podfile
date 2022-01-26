@@ -2,6 +2,7 @@
 platform :ios, '14.0'
 
 source 'https://github.com/dimspawn/Epic-Movie-CorePodSpecs'
+source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!
 
